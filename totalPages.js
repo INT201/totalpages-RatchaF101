@@ -12,7 +12,7 @@ function totalPages(arrayItems, rowsPerPage) {
   else{
     page = arrayItems.length/rowsPerPage
     // console.log(page)
-    return Math.round(page)
+    return Math.ceil(page)
     
   }
 
