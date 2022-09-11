@@ -11,6 +11,9 @@ function totalPages(arrayItems, rowsPerPage) {
   }
   else{
     page = arrayItems.length/rowsPerPage
+    if(page = Infinity){
+      return 1
+    }
     // console.log(page)
     return Math.ceil(page)
     
