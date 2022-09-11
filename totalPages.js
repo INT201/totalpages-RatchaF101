@@ -1,7 +1,7 @@
 const { template } = require('@babel/core')
 
 function totalPages(arrayItems, rowsPerPage) {
-  if(rowsPerPage == null || undefined || 0){
+  if(rowsPerPage == null || undefined){
     // console.log(1)
     return 1
   }
@@ -14,9 +14,8 @@ function totalPages(arrayItems, rowsPerPage) {
     if(page = Infinity){
       return 1
     }
+    else{return Math.ceil(page)}
     // console.log(page)
-    return Math.ceil(page)
-    
   }
 
 }
